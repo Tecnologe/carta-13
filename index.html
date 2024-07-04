@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor con Lluvia de Corazones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9dfe5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: azure;
+            /* Fondo rosa pálido */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            /* Para posicionar los corazones absolutamente */
+            overflow: hidden;
+            /* Para evitar que los corazones se desborden */
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        .heart {
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            background-image: radial-gradient(circle, #f00, #f00 30%, transparent 32%);
+            background-size: 10px 10px;
+            animation: heartFall 5s linear infinite;
+        }
+
+        .heart:nth-child(2) {
+            left: 10%;
+            animation-duration: 4s;
+        }
+
+        .heart:nth-child(3) {
+            left: 20%;
+            animation-duration: 6s;
+        }
+
+        .heart:nth-child(4) {
+            left: 30%;
+            animation-duration: 5s;
+        }
+
+        .heart:nth-child(5) {
+            left: 40%;
+            animation-duration: 4.5s;
+        }
+
+        .heart:nth-child(6) {
+            left: 50%;
+            animation-duration: 5.5s;
+        }
+
+        .heart:nth-child(7) {
+            left: 60%;
+            animation-duration: 4.2s;
+        }
+
+        .heart:nth-child(8) {
+            left: 70%;
+            animation-duration: 5.8s;
+        }
+
+        .heart:nth-child(9) {
+            left: 80%;
+            animation-duration: 4.7s;
+        }
+
+        .heart:nth-child(10) {
+            left: 90%;
+            animation-duration: 6s;
+        }
+
+        @keyframes heartFall {
+            0% {
+                transform: translateY(-10vh) rotateZ(0deg);
+            }
+
+            100% {
+                transform: translateY(110vh) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Para ti,</h1>
+            <p>En el día de hoy, no pude evitar notar lo deslumbrante que lucías. Tu presencia iluminó mi mundo más allá
+                de cualquier medida. Cada detalle de tu estilo y gracia me atrapó, pero fue ese toque especial en tu
+                cabello, el rojito pintado, lo que verdaderamente me cautivó.</p>
+            <p>Me gusta mucho cómo eliges cada detalle con tanto cuidado, cómo cada gesto tuyo es una obra de arte que
+                me deja maravillado. Y cuando hoy me regalaste esa sonrisa y la coqueta colita, mi corazón se rindió aún
+                más ante tu encanto.</p>
+            <p>Eres la personificación misma de la belleza y la elegancia, un poema viviente que enciende pasiones en mi
+                corazón. Cada día a tu lado es un regalo que atesoro con toda mi alma.</p>
+            <p>Con todo mi cariño y amor </p>
+            <p>Yo💌</p>
+            <p>PD:Me encatanto cuandoo te agachaste y se te pude ver abajito 😍😘👌Chulada💓👅</p>
+        </div>
+        <!-- Lluvia de corazones -->
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+</body>
+
+</html>
